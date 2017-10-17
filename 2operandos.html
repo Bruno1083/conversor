@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/js" href="js/script.js">
+	<link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+		<div>
+			<div class="cabecalho">
+			
+			</div>
+		</div>
+
+	  <nav class="row">
+    	<div class="col s12 nav-wrapper  blue-grey darken-4">
+	      	<a href="#" class="brand-logo left"><i class="material-icons">exposure</i>Calculadora</a>
+	      	<a href="#" data-activates="menu-mobile" class="button-collapse right">
+	      		<i class="material-icons">menu</i>
+	      	</a>
+	     	<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="index.html">1 Operando</a></li>
+		        <li><a href="2operandos.html">2 Operando</a></li>
+		        <li><a href="conversor.html">Conversor de Moedas</a></li>
+		        <li><a href="convesor-bases.html">Conversor de Bases</a></li>
+		        <li><a href="ajuda.html">Ajuda</a></li>
+      		</ul>
+      		<ul id="menu-mobile" class="side-nav">
+		        <li><a href="index.html">1 Operando</a></li>
+		        <li><a href="2operandos.html">2 Operando</a></li>
+		        <li><a href="conversor.html">Conversor de Moedas</a></li>
+		        <li><a href="conversor-bases.html">Conversor de Bases</a></li>
+		        <li><a href="ajuda.html">Ajuda</a></li>
+      		</ul>
+    	</div>
+ 	 </nav>
+ 	 <div class="row center">
+ 	 		<div class="col s12">
+			  	<h1>2 Operando</h1>
+			 </div>
+ 	 </div>
+  	<div class="row container">
+	  	<div class="col s4">
+		  	<div class="input-field">
+	          <input id="valor1" type="number" class="" ">
+	          <label for="valor1">Valor 1:</label>
+	        </div>		  
+	  	</div>
+	  	<div class="col s4 drop center ">
+	  		  <div class="input-field col s12">
+				    <select>
+				      <option value="" selected>Operador</option>
+				      <option id="somar" value="1">+</option>
+				      <option id="subtrair" value="2">-</option>
+				      <option id="multiplicar" value="3">*</option>
+				      <option id="dividir" value="3">/</option>
+				    </select>
+    				
+  			</div>
+	  	</div>
+	  	<div class="col s4">
+		  	<div class="input-field">
+	          <input id="valor2" type="number" class="" ">
+	          <label for="valor2">Valor 2:</label>
+	        </div>		  
+	  	</div>
+	
+
+	<div class="row">
+
+		 <div class="col s12 m6 l12">
+			 <div class="">
+			 	<label for="resultado1">Resultado:</label>
+		        <input id="resultado1" type="number" class="validate">
+		        
+		        </div>
+		     </div>
+	     </div>  
+
+	     <div class="row">
+	     	<div class="col s12 m6 l4">
+	     		<button onclick="limpar1()" class="waves-effect waves-light btn" type="reset"><i class="material-icons left">exit_to_app</i>Limpar</button>
+	     	</div>
+	     	<div class="col s12 m6 l4">
+	     		<button onclick="dois_operandos()" id="calcula" value="calcula" class="waves-effect waves-light btn" ><i class="material-icons left" >exit_to_app</i>Executar</button>
+	     	</div>
+	     	
+	     	
+	     </div> 
+	</div> 
+
+	        <footer class="page-footer blue-grey darken-3">
+	         
+	          <div class="footer-copyright">
+	            <div class="container">
+	            © 2017 Copyright 
+	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	            </div>
+	          </div>
+       		</footer>
+ <script type="text/javascript" src="js/script.js"></script>       		
+ <script src="lib/jquery/jquery.min.js"></script>
+ <script src="lib/materialize/js/materialize.min.js"></script>
+ <script>
+ 	$(".button-collapse").sideNav();
+ 	$('select').material_select();
+ </script>
+</body>
+</html>
