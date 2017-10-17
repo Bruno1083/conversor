@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/js" href="js/script.js">
+	<link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+		<div>
+			<div class="cabecalho">
+				
+			</div>
+		</div>
+		
+	  <nav class="row">
+    	<div class="nav-wrapper  blue-grey darken-4">
+    		
+	      	<a href="#" class="brand-logo left"><i class="material-icons">exposure</i>Calculadora</a>
+	      	<a href="#" data-activates="menu-mobile" class="button-collapse right">
+	      		<i class="material-icons">menu</i>
+	      	</a>
+	     	<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="index.html">1 Operando</a></li>
+		        <li><a href="2operandos.html">2 Operando</a></li>
+		        <li><a href="conversor.html">Conversor de Moedas</a></li>
+		        <li><a href="conversor-bases.html">Conversor de Bases</a></li>
+		        <li><a href="ajuda.html">Ajuda</a></li>
+      		</ul>
+      		<!-- menu mobile -->
+      		<ul id="menu-mobile" class="side-nav">
+		        <li><a href="index.html">1 Operando</a></li>
+		        <li><a href="2operandos.html">2 Operando</a></li>
+		        <li><a href="conversor.html">Conversor de Moedas</a></li>
+		        <li><a href="conversor-bases.html">Conversor de Bases</a></li>
+		        <li><a href="ajuda.html">Ajuda</a></li>
+      		</ul>
+    	</div>
+ 	 </nav>
+ 	 <div class="row center">
+ 	 		<div class="col s12">
+			  	<h1>Conversor de Bases</h1>
+			 </div>
+ 	 </div>
+  	<div class="row container">
+	  	<div class="col l7">
+		  	<div class="input-field">
+	          <input id="conversor-bases" type="number" class="" ">
+	          <label for="conversor-bases">Valor:</label>
+	        </div>
+	  	</div>
+	  	<div class="col s3 l6">
+	  		<p>
+			    <input class="with-gap" name="group3" type="radio" value="" id="dec-bin" checked />
+			    <label for="dec-bin">Dec &rarr; Bin</label>
+	  		</p>
+
+	  		<p>
+			    <input class="with-gap" name="group3" type="radio" value="" id="dec-hex" />
+			    <label for="dec-hex"> Dec &rarr; Hex </label>
+	  		</p>
+	  		<p>
+			    <input class="with-gap" name="group3" type="radio" value="" id="bin-dec" />
+			    <label for="bin-dec"> Bin &rarr; Dec</label>
+	  		</p>
+
+	  		<p>
+			    <input class="with-gap" name="group3" type="radio" value="" id="hex-dec" />
+			    <label for="hex-dec">Hex &rarr; Dec</label>
+	  		</p>
+
+	  	</div>
+
+	 	 <div class="row">
+
+		 	 <div class="col s3 l12 m12">
+			  	<div class="">
+			  		<label for="resultado3">Resultado:</label>
+		          <input id="resultado3" type="number" class="">
+		          
+		        </div>
+		     </div>
+	     </div>  
+
+	     <div class="row">
+	     	<div class="col s4">
+	     		<button onclick="limpar3()" class="waves-effect waves-light btn" type="reset"><i class="material-icons left">exit_to_app</i>Limpar</button>
+	     	</div>
+	     	<div class="col s4">
+	     		<button onclick="conversor_bases()" id="calcula" value="calcula" class="waves-effect waves-light btn" ><i class="material-icons left" >exit_to_app</i>Executar</button>
+	     	</div>
+	     	
+	     	
+	     </div> 
+	 
+	</div>
+	        <footer class="page-footer blue-grey darken-3">
+	         
+	          <div class="footer-copyright">
+	            <div class="container">
+	            © 2017 Copyright 
+	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	            </div>
+	          </div>
+       		</footer>
+ <script type="text/javascript" src="js/script.js"></script>       		
+ <script src="lib/jquery/jquery.min.js"></script>
+ <script src="lib/materialize/js/materialize.min.js"></script>
+ <script>
+ 	$(".button-collapse").sideNav();
+ </script>
+</body>
+</html>
