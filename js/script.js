@@ -53,7 +53,7 @@ function conversor(){
 
 	}else if (document.getElementById("meio").checked) {
 
-		var total = valor / 2;
+		var total = 1 / valor;
 
 	}
 	document.getElementById("resultado2").value = total;
